@@ -45,12 +45,12 @@
                                         License
                                     </a>
                                 </li>
-                                                            <li class="active">
+                                                            <li class="">
                                     <a href="http://www.boomcms.net/docs/getting-started.html">
                                         Getting started
                                     </a>
                                 </li>
-                                                            <li class="">
+                                                            <li class="active">
                                     <a href="http://www.boomcms.net/docs/events.html">
                                         Events
                                     </a>
@@ -61,15 +61,85 @@
 
                 
                 <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                    <h1 id="getting-started">Getting Started</h1>
-<h2 id="requirements">Requirements</h2>
-<p>As BoomCMS is based on <a href="http://www.laravel.com">Laravel</a> it has the same <a href="http://laravel.com/docs/5.0#installation">PHP version and extensions</a> as Laravel.</p>
-<p>In addition to Laravel's system requirements, BoomCMS also needs the imagick PHP extension.</p>
-<h2 id="installation">Installation</h2>
-<p>Installation is done via <a href="https://getcomposer.org/">Composer</a></p>
-<pre><code>composer create-project boomcms/boomcms &lt;directory&gt;</code></pre>
-<p>You will then need to ensure that the <code>storage</code> and <code>bootstrap/cache</code> directories are writable by your webserver.</p>
-<p>After configuring your web server you can then go to the new Boom site in your browser to complete the installation.</p>
+                    <h1 id="events">Events</h1>
+<p>BoomCMS makes use of <a href="http://laravel.com/docs/5.1/events">Laravel's event classes</a> making it easy for developers to extend CMS functionality.</p>
+<p>Before reading this section you should be familiar with Laravel events, in particular how to listen for and respond to events, by reading the Event documentation at <a href="http://laravel.com/docs/5.1/events">http://laravel.com/docs/5.1/events</a></p>
+<p>Event classes can be found in the <a href="https://github.com/boomcms/boom-core/tree/master/src/BoomCMS/Events">BoomCMS\Events</a> namespace. BoomCMS fires these events after certain actions:</p>
+<h2 id="page-events">Page Events</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Notes</th>
+<th>Event class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Page created</td>
+<td></td>
+<td><a href="https://github.com/boomcms/boom-core/tree/master/src/BoomCMS/Events/PageWasCreated.php">BoomCMS\Events\PageWasCreated</a></td>
+</tr>
+<tr>
+<td>Approval requested for page drafts</td>
+<td></td>
+<td><a href="https://github.com/boomcms/boom-core/tree/master/src/BoomCMS/Events/PageApprovalRequested.php">BoomCMS\Events\PageApprovalRequested</a></td>
+</tr>
+<tr>
+<td>Page template changed</td>
+<td></td>
+<td><a href="https://github.com/boomcms/boom-core/tree/master/src/BoomCMS/Events/PageTemplateWasChanged.php">BoomCMS\Events\PageTemplateChanged</a></td>
+</tr>
+<tr>
+<td>Page title changed</td>
+<td></td>
+<td><a href="https://github.com/boomcms/boom-core/tree/master/src/BoomCMS/Events/PageTitleWasChanged.php">BoomCMS\Events\PageTitleWasChanged</a></td>
+</tr>
+<tr>
+<td>Page deleted</td>
+<td></td>
+<td><a href="https://github.com/boomcms/boom-core/tree/master/src/BoomCMS/Events/PageWasDeleted.php">BoomCMS\Events\PageWasDeleted</a></td>
+</tr>
+<tr>
+<td>Page made visible</td>
+<td>Event fired when an invisible page has it's visibility setting changed to 'visible'</td>
+<td><a href="https://github.com/boomcms/boom-core/tree/master/src/BoomCMS/Events/PageWasMadeVisible.php">BoomCMS\Events\PageWasMadeVisible</a></td>
+</tr>
+<tr>
+<td>Page published</td>
+<td>Events fired when a page version is set to be published. Won't be fired if changes are embargoed</td>
+<td><a href="https://github.com/boomcms/boom-core/tree/master/src/BoomCMS/Events/PageWasPublished.php">BoomCMS\Events\PageWasPublished</a></td>
+</tr>
+<tr>
+<td>Chunk created</td>
+<td>Fired when chunk content is saved (i.e. a new version of a chunk is created</td>
+<td><a href="https://github.com/boomcms/boom-core/tree/master/src/BoomCMS/Events/ChunkWasCreated.php">BoomCMS\Events\ChunkWasCreated</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="auth-events">Auth Events</h2>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Event class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Failed Login</td>
+<td><a href="https://github.com/boomcms/boom-core/tree/master/src/BoomCMS/Events/FailedLogin.php">BoomCMS\Events\FailedLogin</a></td>
+</tr>
+<tr>
+<td>Successful Login</td>
+<td><a href="https://github.com/boomcms/boom-core/tree/master/src/BoomCMS/Events/SucessfulLogin.php">BoomCMS\Events\SuccessfulLogin</a></td>
+</tr>
+<tr>
+<td>Logout</td>
+<td><a href="https://github.com/boomcms/boom-core/tree/master/src/BoomCMS/Events/Logout.php">BoomCMS\Events\Logout</a></td>
+</tr>
+</tbody>
+</table>
                 </section>
 
             </div>
