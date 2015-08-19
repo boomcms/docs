@@ -1,14 +1,20 @@
 baseUrl: http://www.boomcms.net/docs
+
+github:
+    user: boomcms
+    repo: boomcms
+
 title: BoomCMS
 subTitle: Simple content management for editors and developers
+
 menu:
     items:
         home:
             text: Home
-            relativeUrl: index.html
+            relativeUrl: /docs/index.html
         license:
             text: License
-            relativeUrl: license.html
+            relativeUrl: /docs/license.html
         getting-started:
             text: Getting started
-            relativeUrl: getting-started.html
+            relativeUrl: /docs/getting-started.html
