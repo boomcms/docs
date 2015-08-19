@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>BoomCMS</title>
+
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/highlight.dark.css">
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="/">
+                BoomCMS
+                <small class="hidden-xs hidden-sm">
+                    Simple content management for editors and developers
+                </small>
+            </a>
+
+            
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+                
+                    <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+                        <ul class="nav nav-pills nav-stacked">
+                                                            <li class="">
+                                    <a href="/index.html">
+                                        Home
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="/license.html">
+                                        License
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="/getting-started.html">
+                                        Getting started
+                                    </a>
+                                </li>
+                                                    </ul>
+
+                    </nav>
+
+                
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
+                    <h1 id="getting-started">Getting Started</h1>
+<h2 id="requirements">Requirements</h2>
+<p>As BoomCMS is based on <a href="http://www.laravel.com">Laravel</a> it has the same <a href="http://laravel.com/docs/5.0#installation">PHP version and extensions</a> as Laravel.</p>
+<p>In addition to Laravel's system requirements, BoomCMS also needs the imagick PHP extension.</p>
+<h2 id="installation">Installation</h2>
+<p>Installation is done via <a href="https://getcomposer.org/">Composer</a></p>
+<pre><code>composer create-project boomcms/boomcms &lt;directory&gt;</code></pre>
+<p>You will then need to ensure that the <code>storage</code> and <code>bootstrap/cache</code> directories are writable by your webserver.</p>
+<p>After configuring your web server you can then go to the new Boom site in your browser to complete the installation.</p>
+                </section>
+
+            </div>
+        </main>
+
+        <footer>
+            <div class="container-fluid">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer>
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script>
+
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>
