@@ -2,7 +2,7 @@ baseUrl: http://www.boomcms.net/docs
 
 github:
     user: boomcms
-    repo: boomcms
+    repo: boom-core
 
 title: BoomCMS
 subTitle: Simple content management for editors and developers
