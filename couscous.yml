@@ -11,10 +11,10 @@ menu:
     items:
         home:
             text: Home
-            relativeUrl: /docs/index.html
+            relativeUrl: index.html
         license:
             text: License
-            relativeUrl: /docs/license.html
+            relativeUrl: license.html
         getting-started:
             text: Getting started
-            relativeUrl: /docs/getting-started.html
+            relativeUrl: getting-started.html
