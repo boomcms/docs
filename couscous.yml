@@ -1,0 +1,11 @@
+menu:
+    items:
+        home:
+            text: Home
+            relativeUrl: index.html
+        license:
+            text: License
+            relativeUrl: license.html
+        getting-started:
+            text: Getting started
+            relativeUrl: getting-started.html
