@@ -18,3 +18,6 @@ menu:
         getting-started:
             text: Getting started
             relativeUrl: getting-started.html
+        events:
+            text: Events
+            relativeUrl: events.html
