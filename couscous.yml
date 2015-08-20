@@ -18,6 +18,9 @@ menu:
         getting-started:
             text: Getting started
             relativeUrl: getting-started.html
+        permissions:
+            text: Permissions
+            relativeUrl: permissions.html
         page-versioning:
             text: Page versioning
             relativeUrl: page-versioning.html
