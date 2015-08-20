@@ -9,9 +9,10 @@ An important concept to understand at the core of BoomCMS and its editing enviro
 Chunks define an editable area of the page which can be interacted with by users in the editing environment to change the content of a page.
 
 Clicking on a chunk when in the editor will allow the content in that chunk to be edited.
-There are many different types of chunks which can be defined within a page template and the editing interface with which a user is presented will depend on the type of chunk.
-
+When a chunk is edited a new [Page version](/docs/page-versioning.html) will be created as a draft.
 If a chunk doesn't contain any content then it will only appear to CMS users.
+
+There are many different types of chunks which can be defined within a page template and the editing interface with which a user is presented will depend on the type of chunk.
 
 ## Text
 Text chunks define an area of editable page text and are edited with the WYSIWYG editor.
