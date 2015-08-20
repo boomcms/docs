@@ -1,3 +1,7 @@
+---
+currentMenu: home
+---
+
 # BoomCMS
 
 BoomCMS is a content management system build on the Laravel PHP framework.

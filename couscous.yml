@@ -18,6 +18,9 @@ menu:
         getting-started:
             text: Getting started
             relativeUrl: getting-started.html
+        page-versioning:
+            text: Page versioning
+            relativeUrl: page-verioning.html
         events:
             text: Events
             relativeUrl: events.html
