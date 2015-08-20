@@ -20,7 +20,7 @@ menu:
             relativeUrl: getting-started.html
         page-versioning:
             text: Page versioning
-            relativeUrl: page-verioning.html
+            relativeUrl: page-versioning.html
         events:
             text: Events
             relativeUrl: events.html
