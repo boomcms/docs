@@ -5,7 +5,7 @@ currentMenu: getting-started
 # Getting Started
 
 ## Requirements
-As BoomCMS is based on [Laravel](http://www.laravel.com) it has the same [PHP version and extensions](http://laravel.com/docs/5.0#installation) as Laravel.
+As BoomCMS is based on [Laravel](http://www.laravel.com) it requires the same [PHP version and extensions](http://laravel.com/docs/5.0#installation) as Laravel.
 
 In addition to Laravel's system requirements, BoomCMS also needs the imagick PHP extension.
 
