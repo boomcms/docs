@@ -21,9 +21,9 @@ menu:
         permissions:
             text: Permissions
             relativeUrl: permissions.html
-        page-versioning:
-            text: Page versioning
-            relativeUrl: page-versioning.html
+        pages:
+            text: Pages
+            relativeUrl: pages.html
         chunks:
             text: Chunks
             relativeUrl: chunks.html

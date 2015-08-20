@@ -1,10 +1,10 @@
 ---
-currentMenu: page-versioning
+currentMenu: pages
 ---
 
-# Page versioning
+# Pages
 
-This page outlines the key concepts behind page editing an versioning in BoomCMS.
+This page outlines the key concepts behind page editing and versioning in BoomCMS.
 
 ## Visibility
 
