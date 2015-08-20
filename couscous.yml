@@ -21,6 +21,9 @@ menu:
         page-versioning:
             text: Page versioning
             relativeUrl: page-versioning.html
+        chunks:
+            text: Chunks
+            relativeUrl: chunks.html
         events:
             text: Events
             relativeUrl: events.html
