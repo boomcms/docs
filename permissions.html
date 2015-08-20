@@ -40,7 +40,7 @@
                                         Home
                                     </a>
                                 </li>
-                                                            <li class="active">
+                                                            <li class="">
                                     <a href="http://www.boomcms.net/docs/license.html">
                                         License
                                     </a>
@@ -50,7 +50,7 @@
                                         Getting started
                                     </a>
                                 </li>
-                                                            <li class="">
+                                                            <li class="active">
                                     <a href="http://www.boomcms.net/docs/permissions.html">
                                         Permissions
                                     </a>
@@ -76,23 +76,20 @@
 
                 
                 <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                    <p>The MIT License (MIT)</p>
-<p>Copyright (c) 2015 BoomCMS</p>
-<p>Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the &quot;Software&quot;), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:</p>
-<p>The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.</p>
-<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.</p>
+                    <h1 id="permissions">Permissions</h1>
+<p>BoomCMS uses a role based permissions system with user groups.</p>
+<p>A role represents a particular action that can be performed within the CMS.
+Examples of roles are accessing the asset manager, editing a page, or managing CMS users.</p>
+<p>Roles are assigned to groups which can either allow or disallow a role.
+A user will then have the roles from all the groups to which they belong merged to determine whether or not they can perform a particular CMS action.</p>
+<p>In order to perform a role a user must be a member of at least one group which is allowed to perform a role.
+However, if they're also a member of a group to which the role has been denied then this will take precedence and the user will not be able to perform the role.</p>
+<h2 id="page-permissions">Page permissions</h2>
+<p>Page permissions work along the same lines.
+However, in addition to roles being merged across groups they are also inherited down the page tree.
+Therefore if a group is given the 'add page' role to the top level page in the site then they will be able to add pages anywhere in the page tree.
+If a group is denied a role then the members of that group will not be able to perform the role in that section of the page tree.</p>
+<p>Precedence for page permissions is determined by proximity in the page tree where the role is set.</p>
                 </section>
 
             </div>
