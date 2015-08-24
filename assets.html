@@ -50,12 +50,12 @@
                                         Getting started
                                     </a>
                                 </li>
-                                                            <li class="active">
+                                                            <li class="">
                                     <a href="http://www.boomcms.net/docs/permissions.html">
                                         Permissions
                                     </a>
                                 </li>
-                                                            <li class="">
+                                                            <li class="active">
                                     <a href="http://www.boomcms.net/docs/assets.html">
                                         Assets
                                     </a>
@@ -81,20 +81,10 @@
 
                 
                 <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                    <h1 id="permissions">Permissions</h1>
-<p>BoomCMS uses a role based permissions system with user groups.</p>
-<p>A role represents a particular action that can be performed within the CMS.
-Examples of roles are accessing the asset manager, editing a page, or managing CMS users.</p>
-<p>Roles are assigned to groups which can either allow or disallow a role.
-A user will then have the roles from all the groups to which they belong merged to determine whether or not they can perform a particular CMS action.</p>
-<p>In order to perform a role a user must be a member of at least one group which is allowed to perform a role.
-However, if they're also a member of a group to which the role has been denied then this will take precedence and the user will not be able to perform the role.</p>
-<h2 id="page-permissions">Page permissions</h2>
-<p>Page permissions work along the same lines.
-However, in addition to roles being merged across groups they are also inherited down the page tree.
-Therefore if a group is given the 'add page' role to the top level page in the site then they will be able to add pages anywhere in the page tree.
-If a group is denied a role then the members of that group will not be able to perform the role in that section of the page tree.</p>
-<p>Precedence for page permissions is determined by proximity in the page tree where the role is set.</p>
+                    <h1 id="assets">Assets</h1>
+<p>Images, documents, and other website assets can be managed via the BoomCMS Asset Manager.
+Site assets are inserted into pages via the Asset Picker which provides a more simplified interface for uploading and browsing assets.
+Both the Asset Manager and Asset Picker are available to users who have the <strong>manage_assets</strong> role.</p>
                 </section>
 
             </div>
