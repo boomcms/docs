@@ -21,6 +21,9 @@ menu:
         permissions:
             text: Permissions
             relativeUrl: permissions.html
+        assets:
+            text: Assets
+            relativeUrl: assets.html
         pages:
             text: Pages
             relativeUrl: pages.html
