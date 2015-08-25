@@ -85,6 +85,24 @@
 <p>Images, documents, and other website assets can be managed via the BoomCMS Asset Manager.
 Site assets are inserted into pages via the Asset Picker which provides a more simplified interface for uploading and browsing assets.
 Both the Asset Manager and Asset Picker are available to users who have the <strong>manage_assets</strong> role.</p>
+<h2 id="asset-metadata">Asset Metadata</h2>
+<p>Assets can be search searched and filtered across many metadata fields including:</p>
+<ul>
+<li>A title and description</li>
+<li>File size</li>
+<li>File type</li>
+<li>The number of times an asset has been downloaded by a site visitor</li>
+<li>When the asset was uploaded</li>
+<li>A simple tagging system</li>
+</ul>
+<h2 id="image-editing">Image editing</h2>
+<p>The asset manager features a simple image editing interface which supports rotating and cropping images.</p>
+<h2 id="image-resizing">Image resizing</h2>
+<p>Height and width parameters can be added to asset URLs in order to resize images automatically.
+This can be used by template developers to ensure that the correct size image is always available.
+Resized images are cached to reduce loading times.</p>
+<p>The format for asset URLs is:</p>
+<pre><code>/asset/view/&lt;id&gt;/&lt;width&gt;/&lt;height&gt;</code></pre>
                 </section>
 
             </div>
