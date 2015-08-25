@@ -95,6 +95,65 @@ For more information about chunks and how they are defined see the <a href="/chu
 <h2 id="themes">Themes</h2>
 <p>Templates can be grouped and packaged as part of a theme.
 Themes provide a way to easily extend and customise a BoomCMS site.</p>
+<h2 id="helper-functions">Helper functions</h2>
+<p>BoomCMS defines a number of helper functions which can be used by developers while creating templates.</p>
+<p>Helper functions are usually defined as static methods in the <a href="https://github.com/boomcms/boom-core/blob/master/src/BoomCMS/Support/Helpers.php">BoomCMS\Support\Helpers class</a>.
+However, these functions can use be accessed via variable callbacks defined in the views.
+These variables will have the same name as the associated helper method.</p>
+<p>For example, if you wanted to call <code>BoomCMS\Support\Helpers::foo()</code> you would simply have to use <code>$foo()</code> in your templates.</p>
+<p>Below is a brief overview of the available Helper methods and their purpose.
+For more information about a method's arguments see the <a href="https://github.com/boomcms/boom-core/blob/master/src/BoomCMS/Support/Helpers.php">source of the Helpers class</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Method Name</th>
+<th>Shorthand callback</th>
+<th>Overview</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BoomCMS\Support\Helpers::analytics()</td>
+<td>$analytics()</td>
+<td>Used to insert the site's analytics tracking code only when in production</td>
+</tr>
+<tr>
+<td>BoomCMS\Support\Helpers::assetUrl()</td>
+<td>$assetURL()</td>
+<td>Generates a URL to link to an asset</td>
+</tr>
+<tr>
+<td>BoomCMS\Support\Helpers::countPages()</td>
+<td>$countPages()</td>
+<td>Returns a count of the number of pages which page the given parameters</td>
+</tr>
+<tr>
+<td>BoomCMS\Support\Helpers::getPages()</td>
+<td>$pagePages()</td>
+<td>Returns the pages which match given parameters</td>
+</tr>
+<tr>
+<td>BoomCMS\Support\Helpers::next()</td>
+<td>$next()</td>
+<td>Get the next page in a sequence</td>
+</tr>
+<tr>
+<td>BoomCMS\Support\Helpers::prev()</td>
+<td>$prev()</td>
+<td>Get the previous page in a sequence</td>
+</tr>
+<tr>
+<td>BoomCMS\Support\Helpers::getTags()</td>
+<td>$getTags()</td>
+<td>Get the tags which are applied to a page</td>
+</tr>
+<tr>
+<td>BoomCMS\Support\Helpers::getTagsInSection()</td>
+<td>$getTagsInSection()</td>
+<td>Get the tags which are applied to the children of a page</td>
+</tr>
+</tbody>
+</table>
                 </section>
 
             </div>
