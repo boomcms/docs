@@ -27,6 +27,9 @@ menu:
         pages:
             text: Pages
             relativeUrl: pages.html
+        templates:
+            text: Templates
+            relativeUrl: templates.html
         chunks:
             text: Chunks
             relativeUrl: chunks.html
