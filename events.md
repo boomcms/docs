@@ -8,7 +8,8 @@ BoomCMS makes use of [Laravel's event classes](http://laravel.com/docs/5.1/event
 
 Before reading this section you should be familiar with Laravel events, in particular how to listen for and respond to events, by reading the Event documentation at http://laravel.com/docs/5.1/events
 
-Event classes can be found in the [BoomCMS\Events](https://github.com/boomcms/boom-core/tree/master/src/BoomCMS/Events) namespace. BoomCMS fires these events after certain actions:
+Event classes can be found in the [BoomCMS\Events](https://github.com/boomcms/boom-core/tree/master/src/BoomCMS/Events) namespace.
+BoomCMS fires these events after certain actions:
 
 ## Page Events
 
@@ -23,7 +24,7 @@ Page made visible | Event fired when an invisible page has it's visibility setti
 Page published | Events fired when a page version is set to be published. Won't be fired if changes are embargoed | [BoomCMS\Events\PageWasPublished](https://github.com/boomcms/boom-core/tree/master/src/BoomCMS/Events/PageWasPublished.php)
 Chunk created | Fired when chunk content is saved (i.e. a new version of a chunk is created | [BoomCMS\Events\ChunkWasCreated](https://github.com/boomcms/boom-core/tree/master/src/BoomCMS/Events/ChunkWasCreated.php)
 
-## Auth Events
+## Authentication Events
 Action | Event class
 ------ | ------
 Failed Login | [BoomCMS\Events\FailedLogin](https://github.com/boomcms/boom-core/tree/master/src/BoomCMS/Events/FailedLogin.php)
